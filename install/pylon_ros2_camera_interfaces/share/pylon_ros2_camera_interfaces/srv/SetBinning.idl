@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/SetBinning.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Binning factor to get downsampled images. It refers here to any camera" "\n"
+      "setting which combines rectangular neighborhoods of pixels into larger" "\n"
+      "\"super-pixels.\" It reduces the resolution of the output image to" "\n"
+      "(width / binning_x) x (height / binning_y)." "\n"
+      "The default values binning_x = binning_y = 0 are considered the same" "\n"
+      "as binning_x = binning_y = 1 (no subsampling)." "\n"
+      "Calling this service with target binning values will change the binning entry" "\n"
+      "in the published camera_info_msg")
+    struct SetBinning_Request {
+      uint32 target_binning_x;
+
+      uint32 target_binning_y;
+    };
+    @verbatim (language="comment", text=
+      "Exact match can not always be reached")
+    struct SetBinning_Response {
+      uint32 reached_binning_x;
+
+      uint32 reached_binning_y;
+
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/SetActionTriggerConfiguration.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Set action trigger configuration through service" "\n"
+      "Changes the configuration of the camera so that it is triggered by the first available action command." "\n"
+      "This configuration enables the frame start trigger and disables all other trigger types. " "\n"
+      "As trigger source the first available action command is selected, i.e., the camera will be triggered " "\n"
+      "by action commands issued by the application." "\n"
+      "In contrast to using the software trigger triggering with action commands allows to trigger multiple cameras simultaneously.")
+    struct SetActionTriggerConfiguration_Request {
+      int32 action_device_key;
+
+      int32 action_group_key;
+
+      uint32 action_group_mask;
+
+      @verbatim (language="comment", text=
+        "ERegistrationMode: 1 -> RegistrationMode_Append, 2 -> RegistrationMode_ReplaceAll")
+      int32 registration_mode;
+
+      @verbatim (language="comment", text=
+        "ECleanup: 1 -> Cleanup_None, 2 -> Cleanup_Delete")
+      int32 cleanup;
+    };
+    struct SetActionTriggerConfiguration_Response {
+      @verbatim (language="comment", text=
+        "success or not")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "status message")
+      string message;
+    };
+  };
+};

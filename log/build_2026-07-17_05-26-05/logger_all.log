@@ -1,0 +1,320 @@
+[0.163s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.163s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fb9ec887d90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb9ec83d870>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb9ec83d870>>, mixin_verb=('build',))
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.500s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mcav/cam_dev_ws'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extension 'ignore'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extension 'ignore_ament_install'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extensions ['colcon_pkg']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extension 'colcon_pkg'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extensions ['colcon_meta']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extension 'colcon_meta'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extensions ['ros']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extension 'ros'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extensions ['cmake', 'python']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extension 'cmake'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extension 'python'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extensions ['python_setup_py']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera) by extension 'python_setup_py'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extension 'ignore'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extension 'ignore_ament_install'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extensions ['colcon_pkg']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extension 'colcon_pkg'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extensions ['colcon_meta']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extension 'colcon_meta'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extensions ['ros']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extension 'ros'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extensions ['cmake', 'python']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extension 'cmake'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extension 'python'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extensions ['python_setup_py']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/docker) by extension 'python_setup_py'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_component) by extensions ['ignore', 'ignore_ament_install']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_component) by extension 'ignore'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_component) by extension 'ignore_ament_install'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_component) by extensions ['colcon_pkg']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_component) by extension 'colcon_pkg'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_component) by extensions ['colcon_meta']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_component) by extension 'colcon_meta'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_component) by extensions ['ros']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_component) by extension 'ros'
+[0.534s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pylon_ros2_camera/pylon_ros2_camera_component' with type 'ros.ament_cmake' and name 'pylon_ros2_camera_component'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_interfaces) by extension 'ignore'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_interfaces) by extension 'ignore_ament_install'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_interfaces) by extensions ['colcon_pkg']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_interfaces) by extension 'colcon_pkg'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_interfaces) by extensions ['colcon_meta']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_interfaces) by extension 'colcon_meta'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_interfaces) by extensions ['ros']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_interfaces) by extension 'ros'
+[0.536s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pylon_ros2_camera/pylon_ros2_camera_interfaces' with type 'ros.ament_cmake' and name 'pylon_ros2_camera_interfaces'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_wrapper) by extensions ['ignore', 'ignore_ament_install']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_wrapper) by extension 'ignore'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_wrapper) by extension 'ignore_ament_install'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_wrapper) by extensions ['colcon_pkg']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_wrapper) by extension 'colcon_pkg'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_wrapper) by extensions ['colcon_meta']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_wrapper) by extension 'colcon_meta'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_wrapper) by extensions ['ros']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/pylon_ros2_camera/pylon_ros2_camera_wrapper) by extension 'ros'
+[0.537s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pylon_ros2_camera/pylon_ros2_camera_wrapper' with type 'ros.ament_cmake' and name 'pylon_ros2_camera_wrapper'
+[0.537s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.538s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.538s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.538s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.538s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.574s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.574s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.578s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 371 installed packages in /opt/ros/humble
+[0.580s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.665s] DEBUG:colcon.colcon_core.verb:Building package 'pylon_ros2_camera_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces', 'merge_install': False, 'path': '/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.666s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_component' build argument 'cmake_args' from command line to 'None'
+[0.666s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_component' build argument 'cmake_target' from command line to 'None'
+[0.666s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_component' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.666s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_component' build argument 'cmake_clean_cache' from command line to 'False'
+[0.666s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_component' build argument 'cmake_clean_first' from command line to 'False'
+[0.666s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_component' build argument 'cmake_force_configure' from command line to 'False'
+[0.666s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_component' build argument 'ament_cmake_args' from command line to 'None'
+[0.666s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_component' build argument 'catkin_cmake_args' from command line to 'None'
+[0.666s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_component' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.666s] DEBUG:colcon.colcon_core.verb:Building package 'pylon_ros2_camera_component' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component', 'merge_install': False, 'path': '/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component', 'symlink_install': False, 'test_result_base': None}
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_wrapper' build argument 'cmake_args' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_wrapper' build argument 'cmake_target' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_wrapper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_wrapper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_wrapper' build argument 'cmake_clean_first' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_wrapper' build argument 'cmake_force_configure' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_wrapper' build argument 'ament_cmake_args' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_wrapper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'pylon_ros2_camera_wrapper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.667s] DEBUG:colcon.colcon_core.verb:Building package 'pylon_ros2_camera_wrapper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_wrapper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper', 'merge_install': False, 'path': '/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_wrapper', 'symlink_install': False, 'test_result_base': None}
+[0.668s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.669s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.669s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces' with build type 'ament_cmake'
+[0.669s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces'
+[0.672s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.672s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.672s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/mcav/cam_dev_ws/build/pylon_ros2_camera_interfaces -- -j8 -l8
+[1.200s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/mcav/cam_dev_ws/build/pylon_ros2_camera_interfaces -- -j8 -l8
+[1.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/mcav/cam_dev_ws/build/pylon_ros2_camera_interfaces
+[1.308s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pylon_ros2_camera_interfaces)
+[1.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/mcav/cam_dev_ws/build/pylon_ros2_camera_interfaces
+[1.311s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces' for CMake module files
+[1.312s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces' for CMake config files
+[1.313s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_interfaces', 'cmake_prefix_path')
+[1.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/cmake_prefix_path.ps1'
+[1.314s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/cmake_prefix_path.dsv'
+[1.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/cmake_prefix_path.sh'
+[1.316s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib'
+[1.316s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_interfaces', 'ld_library_path_lib')
+[1.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/ld_library_path_lib.ps1'
+[1.316s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/ld_library_path_lib.dsv'
+[1.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/ld_library_path_lib.sh'
+[1.317s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/bin'
+[1.317s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib/pkgconfig/pylon_ros2_camera_interfaces.pc'
+[1.317s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib/python3.10/site-packages'
+[1.318s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/bin'
+[1.318s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/package.ps1'
+[1.319s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/package.dsv'
+[1.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/package.sh'
+[1.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/package.bash'
+[1.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/package.zsh'
+[1.323s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/colcon-core/packages/pylon_ros2_camera_interfaces)
+[1.324s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pylon_ros2_camera_interfaces)
+[1.324s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces' for CMake module files
+[1.325s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces' for CMake config files
+[1.327s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_interfaces', 'cmake_prefix_path')
+[1.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/cmake_prefix_path.ps1'
+[1.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/cmake_prefix_path.dsv'
+[1.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/cmake_prefix_path.sh'
+[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib'
+[1.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_interfaces', 'ld_library_path_lib')
+[1.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/ld_library_path_lib.ps1'
+[1.330s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/ld_library_path_lib.dsv'
+[1.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/hook/ld_library_path_lib.sh'
+[1.331s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/bin'
+[1.331s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib/pkgconfig/pylon_ros2_camera_interfaces.pc'
+[1.332s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib/python3.10/site-packages'
+[1.332s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/bin'
+[1.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/package.ps1'
+[1.334s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/package.dsv'
+[1.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/package.sh'
+[1.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/package.bash'
+[1.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/pylon_ros2_camera_interfaces/package.zsh'
+[1.336s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/share/colcon-core/packages/pylon_ros2_camera_interfaces)
+[1.336s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component' with build type 'ament_cmake'
+[1.337s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component'
+[1.337s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.337s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.350s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component -- -j8 -l8
+[1.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component' returned '0': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component -- -j8 -l8
+[1.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component
+[1.423s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pylon_ros2_camera_component)
+[1.423s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component' for CMake module files
+[1.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component' returned '0': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component
+[1.425s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component' for CMake config files
+[1.425s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_component', 'cmake_prefix_path')
+[1.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/cmake_prefix_path.ps1'
+[1.427s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/cmake_prefix_path.dsv'
+[1.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/cmake_prefix_path.sh'
+[1.428s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib'
+[1.428s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_component', 'ld_library_path_lib')
+[1.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/ld_library_path_lib.ps1'
+[1.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/ld_library_path_lib.dsv'
+[1.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/ld_library_path_lib.sh'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/bin'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/pkgconfig/pylon_ros2_camera_component.pc'
+[1.431s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/python3.10/site-packages'
+[1.431s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/bin'
+[1.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.ps1'
+[1.433s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.dsv'
+[1.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.sh'
+[1.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.bash'
+[1.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.zsh'
+[1.435s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/colcon-core/packages/pylon_ros2_camera_component)
+[1.435s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pylon_ros2_camera_component)
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component' for CMake module files
+[1.436s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component' for CMake config files
+[1.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_component', 'cmake_prefix_path')
+[1.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/cmake_prefix_path.ps1'
+[1.437s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/cmake_prefix_path.dsv'
+[1.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/cmake_prefix_path.sh'
+[1.438s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib'
+[1.438s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_component', 'ld_library_path_lib')
+[1.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/ld_library_path_lib.ps1'
+[1.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/ld_library_path_lib.dsv'
+[1.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/hook/ld_library_path_lib.sh'
+[1.440s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/bin'
+[1.440s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/pkgconfig/pylon_ros2_camera_component.pc'
+[1.441s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/python3.10/site-packages'
+[1.441s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/bin'
+[1.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.ps1'
+[1.442s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.dsv'
+[1.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.sh'
+[1.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.bash'
+[1.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.zsh'
+[1.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/colcon-core/packages/pylon_ros2_camera_component)
+[1.445s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_wrapper' with build type 'ament_cmake'
+[1.445s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_wrapper'
+[1.446s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.446s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_wrapper': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/mcav/cam_dev_ws/build/pylon_ros2_camera_wrapper -- -j8 -l8
+[1.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_wrapper' returned '0': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/mcav/cam_dev_ws/build/pylon_ros2_camera_wrapper -- -j8 -l8
+[1.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_wrapper': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/mcav/cam_dev_ws/build/pylon_ros2_camera_wrapper
+[1.537s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pylon_ros2_camera_wrapper)
+[1.537s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper' for CMake module files
+[1.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_wrapper' returned '0': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/mcav/cam_dev_ws/build/pylon_ros2_camera_wrapper
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper' for CMake config files
+[1.539s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_wrapper', 'cmake_prefix_path')
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/cmake_prefix_path.ps1'
+[1.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/cmake_prefix_path.dsv'
+[1.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/cmake_prefix_path.sh'
+[1.541s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/lib'
+[1.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_wrapper', 'ld_library_path_lib')
+[1.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/ld_library_path_lib.ps1'
+[1.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/ld_library_path_lib.dsv'
+[1.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/ld_library_path_lib.sh'
+[1.543s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/bin'
+[1.543s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/lib/pkgconfig/pylon_ros2_camera_wrapper.pc'
+[1.543s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/lib/python3.10/site-packages'
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/bin'
+[1.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/package.ps1'
+[1.545s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/package.dsv'
+[1.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/package.sh'
+[1.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/package.bash'
+[1.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/package.zsh'
+[1.548s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/colcon-core/packages/pylon_ros2_camera_wrapper)
+[1.549s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pylon_ros2_camera_wrapper)
+[1.549s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper' for CMake module files
+[1.549s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper' for CMake config files
+[1.550s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_wrapper', 'cmake_prefix_path')
+[1.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/cmake_prefix_path.ps1'
+[1.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/cmake_prefix_path.dsv'
+[1.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/cmake_prefix_path.sh'
+[1.552s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/lib'
+[1.552s] Level 1:colcon.colcon_core.shell:create_environment_hook('pylon_ros2_camera_wrapper', 'ld_library_path_lib')
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/ld_library_path_lib.ps1'
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/ld_library_path_lib.dsv'
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/hook/ld_library_path_lib.sh'
+[1.554s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/bin'
+[1.554s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/lib/pkgconfig/pylon_ros2_camera_wrapper.pc'
+[1.554s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/lib/python3.10/site-packages'
+[1.555s] Level 1:colcon.colcon_core.environment:checking '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/bin'
+[1.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/package.ps1'
+[1.556s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/package.dsv'
+[1.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/package.sh'
+[1.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/package.bash'
+[1.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/pylon_ros2_camera_wrapper/package.zsh'
+[1.558s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/share/colcon-core/packages/pylon_ros2_camera_wrapper)
+[1.559s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.559s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.559s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.559s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.565s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.565s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.565s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.581s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.581s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mcav/cam_dev_ws/install/local_setup.ps1'
+[1.583s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mcav/cam_dev_ws/install/_local_setup_util_ps1.py'
+[1.586s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mcav/cam_dev_ws/install/setup.ps1'
+[1.588s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mcav/cam_dev_ws/install/local_setup.sh'
+[1.589s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mcav/cam_dev_ws/install/_local_setup_util_sh.py'
+[1.590s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mcav/cam_dev_ws/install/setup.sh'
+[1.591s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mcav/cam_dev_ws/install/local_setup.bash'
+[1.592s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mcav/cam_dev_ws/install/setup.bash'
+[1.593s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mcav/cam_dev_ws/install/local_setup.zsh'
+[1.594s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mcav/cam_dev_ws/install/setup.zsh'

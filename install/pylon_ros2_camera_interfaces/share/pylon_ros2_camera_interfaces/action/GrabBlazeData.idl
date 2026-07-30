@@ -1,0 +1,66 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from pylon_ros2_camera_interfaces/action/GrabBlazeData.action
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/CameraInfo.idl"
+#include "sensor_msgs/msg/Image.idl"
+#include "sensor_msgs/msg/PointCloud2.idl"
+
+module pylon_ros2_camera_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "GOAL ##################")
+    struct GrabBlazeData_Goal {
+      @verbatim (language="comment", text=
+        "Flag which indicates if the exposure times are provided and hence should be" "\n"
+        "set before grabbing")
+      boolean exposure_given;
+
+      @verbatim (language="comment", text=
+        "Only relevant, if exposure_given is true:" "\n"
+        "The list of target exposure times in microseconds." "\n"
+        "It is possible to grab only one image as well as several images with" "\n"
+        "different exposure times. This values can be overriden from the brightness" "\n"
+        "search, in case that the flag exposure_fixed is not true.")
+      sequence<float> exposure_times;
+    };
+    @verbatim (language="comment", text=
+      "RESULT #################")
+    struct GrabBlazeData_Result {
+      @verbatim (language="comment", text=
+        "Data acquired from blaze")
+      sequence<sensor_msgs::msg::PointCloud2> point_clouds;
+
+      sequence<sensor_msgs::msg::Image> intensity_maps;
+
+      sequence<sensor_msgs::msg::Image> depth_maps;
+
+      sequence<sensor_msgs::msg::Image> depth_color_maps;
+
+      sequence<sensor_msgs::msg::Image> confidence_maps;
+
+      @verbatim (language="comment", text=
+        "The CameraInfo obejct describing the camera properties for the above image" "\n"
+        "sequence. Static in many cases, but can also support variable binning setting")
+      sensor_msgs::msg::CameraInfo cam_info;
+
+      @verbatim (language="comment", text=
+        "The reached values of the images e.g., the values that were set to the camera" "\n"
+        "before the grab")
+      sequence<float> reached_exposure_times;
+
+      @verbatim (language="comment", text=
+        "Flag which indicates the success of the grabbing action" "\n"
+        "In case of failure, the images-vector contains only the images, that could be" "\n"
+        "grabbed before the failure occurred.")
+      boolean success;
+    };
+    @verbatim (language="comment", text=
+      "FEEDBACK ################" "\n"
+      "" "\n"
+      "The number of images already taken")
+    struct GrabBlazeData_Feedback {
+      int32 curr_nr_data_acquired;
+    };
+  };
+};

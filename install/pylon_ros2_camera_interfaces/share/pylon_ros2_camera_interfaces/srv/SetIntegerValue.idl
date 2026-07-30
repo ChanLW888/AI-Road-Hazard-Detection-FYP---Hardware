@@ -1,0 +1,46 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/SetIntegerValue.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Used by :" "\n"
+      "- set_black_level ROS service. (value = new targeted black level)." "\n"
+      "- set_acquisition_frame_count ROS service (value = new targeted frame count)." "\n"
+      "- set_offset_x ROS service (value = targeted offset in x-axis)" "\n"
+      "- set_offset_y ROS service (value = targeted offset in y-axis)" "\n"
+      "- set_demosaicing_mode ROS Service (value : 0 = Simple, 1 = Basler PGI)" "\n"
+      "- set_light_source_preset ROS service (value : 0 = Off, 1 = Daylight5000K, 2 = Daylight6500K, 3 = Tungsten2800K)" "\n"
+      "- set_balance_white_auto ROS service (value : 0 = Off, 1 = Once, 2 = Continuous)" "\n"
+      "- set_sensor_readout_mode ROS service (value : 0 = Normal, 1 = Fast)" "\n"
+      "- set_trigger_selector ROS service (value :  0 = Frame start, 1 = Frame burst start (ace USB cameras) / Acquisition Start (ace GigE cameras))" "\n"
+      "- set_trigger_source ROS service (value : 0 = Software, 1 = Line1, 2 = Line3, 3 = Line4, 4 = Action1 (only selected GigE Camera))" "\n"
+      "- set_trigger_activation ROS service (value : 0 = RigingEdge, 1 = FallingEdge)" "\n"
+      "- set_line_selector ROS service (value : 0 = Line1, 1 = Line2, 2 = Line3, 3 = Line4)" "\n"
+      "- set_line_mode ROS service (value : 0 = Input, 1 = Output)" "\n"
+      "- set_line_source ROS sevice (value : 0 = Exposure Active, 1 = FrameTriggerWait, 2 = UserOutput1, 3 = Timer1Active, 4 = FlashWindow)" "\n"
+      "- set_device_link_throughput_limit ROS service (value = new targeted throughput limit in Bytes/sec.)." "\n"
+      "- select_user_set ROS service (value : 0 = Default, 1 = UserSet1, 2 = UserSet2, 3 = UserSet3, 4 = HighGain, 5 = AutoFunctions, 6 = ColorRaw)" "\n"
+      "- select_default_user_set ROS service (value : 0 = Default, 1 = UserSet1, 2 = UserSet2, 3 = UserSet3, 4 = HighGain, 5 = AutoFunctions, 6 = ColorRaw)" "\n"
+      "- set_gamma_selector (value: 0 = User, 1 = sRGB)" "\n"
+      "- set_grab_timeout (unit : ms)" "\n"
+      "- set_trigger_timeout (unit : ms)" "\n"
+      "- set_grabbing_strategy : set 0 = GrabStrategy_OneByOne,  set 1 = GrabStrategy_LatestImageOnly,  set 2 = GrabStrategy_LatestImages")
+    struct SetIntegerValue_Request {
+      @verbatim (language="comment", text=
+        "value to be setted")
+      int64 value;
+    };
+    struct SetIntegerValue_Response {
+      @verbatim (language="comment", text=
+        "indicate successful run of triggered service")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "informational, e.g., for error messages")
+      string message;
+    };
+  };
+};

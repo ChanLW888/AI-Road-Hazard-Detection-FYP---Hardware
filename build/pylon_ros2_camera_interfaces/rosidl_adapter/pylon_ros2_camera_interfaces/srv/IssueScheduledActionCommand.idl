@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/IssueScheduledActionCommand.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Issue action command" "\n"
+      "The action command feature lets you trigger actions in multiple devices (e.g. cameras) " "\n"
+      "at roughly the same time or at a defined point in time (scheduled action command) " "\n"
+      "by using a single broadcast protocol message (without extra cabling). " "\n"
+      "Action commands are used in cameras in the same way as for example the digital input lines.")
+    struct IssueScheduledActionCommand_Request {
+      int32 device_key;
+
+      int32 group_key;
+
+      uint32 group_mask;
+
+      uint64 action_time_ns_from_current_timestamp;
+
+      string broadcast_address;
+    };
+    struct IssueScheduledActionCommand_Response {
+      @verbatim (language="comment", text=
+        "success or not")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "status message")
+      string message;
+    };
+  };
+};

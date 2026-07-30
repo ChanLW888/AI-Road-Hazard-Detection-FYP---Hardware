@@ -1,0 +1,48 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/SetBrightness.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "The target brightness, which is average intensity values of the images." "\n"
+      "It depends the exposure time as well as the gain setting.")
+    struct SetBrightness_Request {
+      int32 target_brightness;
+
+      @verbatim (language="comment", text=
+        "The brightness_continuous flag controls the auto brightness function." "\n"
+        "If it is set to false, the given brightness will only be reached once." "\n"
+        "Hence changing light conditions lead to changing brightness values." "\n"
+        "If it is set to true, the given brightness will be reached continuously," "\n"
+        "trying to adapt to changing light conditions. The 'brightness_contunuous'" "\n"
+        "mode is is only possible for values in the possible auto range of the pylon" "\n"
+        "API which is e.g., for acA2500-14um and acA1920-40gm")
+      @unit (value="50 - 205")
+      boolean brightness_continuous;
+
+      @verbatim (language="comment", text=
+        "If the camera should try reach or keep the desired brightness, hence adapting" "\n"
+        "to changing light conditions, at least one of the following flags MUST be set." "\n"
+        "If both are set, the interface will use the profile that tries to keep the" "\n"
+        "gain at minimum to reduce white noise." "\n"
+        "'exposure_auto' will adapt the exposure time to reach the brightness, wheras" "\n"
+        "'gain_auto' does so by adapting the gain.")
+      boolean exposure_auto;
+
+      boolean gain_auto;
+    };
+    struct SetBrightness_Response {
+      @verbatim (language="comment", text=
+        "Exact match can not always be reached")
+      int32 reached_brightness;
+
+      float reached_exposure_time;
+
+      float reached_gain_value;
+
+      boolean success;
+    };
+  };
+};

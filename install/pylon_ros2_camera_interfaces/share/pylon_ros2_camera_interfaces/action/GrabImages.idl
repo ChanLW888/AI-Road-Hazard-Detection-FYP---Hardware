@@ -1,0 +1,117 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from pylon_ros2_camera_interfaces/action/GrabImages.action
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/CameraInfo.idl"
+#include "sensor_msgs/msg/Image.idl"
+
+module pylon_ros2_camera_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "GOAL ##################")
+    struct GrabImages_Goal {
+      @verbatim (language="comment", text=
+        "Flag which indicates if the exposure times are provided and hence should be" "\n"
+        "set before grabbing")
+      boolean exposure_given;
+
+      @verbatim (language="comment", text=
+        "Only relevant, if exposure_given is true:" "\n"
+        "The list of target exposure times in microseconds." "\n"
+        "It is possible to grab only one image as well as several images with" "\n"
+        "different exposure times. This values can be overriden from the brightness" "\n"
+        "search, in case that the flag exposure_fixed is not true.")
+      sequence<float> exposure_times;
+
+      @verbatim (language="comment", text=
+        "Flag which indicates if the gain is provided and hence should be set before" "\n"
+        "grabbing")
+      boolean gain_given;
+
+      @verbatim (language="comment", text=
+        "Only relevant, if gain_given is true:" "\n"
+        "The target gain in percent of the maximal value the camera supports." "\n"
+        "For USB cameras, the gain is in dB, for GigE cameras it is given in so" "\n"
+        "called 'device specific units'. This value can be overriden from the" "\n"
+        "brightness search, in case that the gain_fixed flag is set to false.")
+      sequence<float> gain_values;
+
+      @verbatim (language="comment", text=
+        "Flag which indicates if the gamma value is provided and hence should be set" "\n"
+        "before grabbing")
+      boolean gamma_given;
+
+      @verbatim (language="comment", text=
+        "Only relevant, if gain_given is true:" "\n"
+        "Gamma correction of pixel intensity." "\n"
+        "Adjusts the brightness of the pixel values output by the camera's sensor" "\n"
+        "to account for a non-linearity in the human perception of brightness or" "\n"
+        "of the display system (such as CRT).")
+      sequence<float> gamma_values;
+
+      @verbatim (language="comment", text=
+        "Flag which indicates if the brightness values are provided and hence should" "\n"
+        "be set before grabbing")
+      boolean brightness_given;
+
+      @verbatim (language="comment", text=
+        "Only relevant, if brightness_given is true:" "\n"
+        "The average intensity values of the images. It depends the exposure time" "\n"
+        "as well as the gain setting.")
+      sequence<float> brightness_values;
+
+      @verbatim (language="comment", text=
+        "Only relevant, if brightness_given is true:" "\n"
+        "If the camera should try reach the desired brightness, at least one of the" "\n"
+        "following flags MUST be set. If both are set, the interface will use the" "\n"
+        "profile that tries to keep the gain at minimum to reduce white noise." "\n"
+        "'exposure_auto' will adapt the exposure time to reach the brightness, wheras" "\n"
+        "'gain_auto' does so by adapting the gain. If one of these flags is set to" "\n"
+        "false, the connected property will be kept fix." "\n"
+        "In most of the cases trying to reach a target brightness only by varying the" "\n"
+        "gain and keeping the exposure time fix is not a good approach, because the" "\n"
+        "exposure range is many times higher than the gain range.")
+      boolean exposure_auto;
+
+      boolean gain_auto;
+    };
+    @verbatim (language="comment", text=
+      "RESULT #################")
+    struct GrabImages_Result {
+      @verbatim (language="comment", text=
+        "The resulting images with the inquired image intensity settings." "\n"
+        "The size of the vector equals the size of the exposure_times or the" "\n"
+        "brightness_values-vector")
+      sequence<sensor_msgs::msg::Image> images;
+
+      @verbatim (language="comment", text=
+        "The CameraInfo obejct describing the camera properties for the above image" "\n"
+        "sequence. Static in many cases, but can also support variable binning setting")
+      sensor_msgs::msg::CameraInfo cam_info;
+
+      @verbatim (language="comment", text=
+        "The reached values of the images e.g., the values that were set to the camera" "\n"
+        "before the grab")
+      sequence<float> reached_exposure_times;
+
+      sequence<float> reached_brightness_values;
+
+      sequence<float> reached_gain_values;
+
+      sequence<float> reached_gamma_values;
+
+      @verbatim (language="comment", text=
+        "Flag which indicates the success of the grabbing action" "\n"
+        "In case of failure, the images-vector contains only the images, that could be" "\n"
+        "grabbed before the failure occurred.")
+      boolean success;
+    };
+    @verbatim (language="comment", text=
+      "FEEDBACK ################" "\n"
+      "" "\n"
+      "The number of images already taken")
+    struct GrabImages_Feedback {
+      int32 curr_nr_images_taken;
+    };
+  };
+};

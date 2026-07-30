@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-e5a939eea1e5966cfae8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "pylon_ros2_camera_wrapper",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "action_client_test_grab_blaze_data::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_client_test_grab_blaze_data-Release-aee01cc60bf42442c4ae.json",
+					"name" : "action_client_test_grab_blaze_data",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "action_client_test_grab_images::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-action_client_test_grab_images-Release-ca2b9359126f8f44e991.json",
+					"name" : "action_client_test_grab_images",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pylon_ros2_camera_wrapper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pylon_ros2_camera_wrapper-Release-9493b0bfb2dd820016d9.json",
+					"name" : "pylon_ros2_camera_wrapper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pylon_ros2_camera_wrapper_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pylon_ros2_camera_wrapper_uninstall-Release-b77ea357246c1aba709b.json",
+					"name" : "pylon_ros2_camera_wrapper_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_grab_blaze_data_action_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_grab_blaze_data_action_client-Release-c679d2bbe1889a528064.json",
+					"name" : "test_grab_blaze_data_action_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_grab_image_action_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_grab_image_action_client-Release-90e4bcbeb9cfd0a63588.json",
+					"name" : "test_grab_image_action_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-f2b983148c2a99792261.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mcav/cam_dev_ws/build/pylon_ros2_camera_wrapper",
+		"source" : "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_wrapper"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

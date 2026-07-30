@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pylon_ros2_camera_interfaces/msg/ComponentStatus.msg
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module msg {
+    module ComponentStatus_Constants {
+      @verbatim (language="comment", text=
+        "the official status id of the component" "\n"        "possible values are")
+      const int8 INITIALIZED = 0;
+      const int8 STOPPED = 1;
+      const int8 RUNNING = 2;
+      const int8 CONFIG_NEEDED = 3;
+      const int8 ERROR = 4;
+      const int8 INTERACTION_REQUEST = 5;
+      const int8 DEACTIVATED = 6;
+    };
+    @verbatim (language="comment", text=
+      " component id; it must be unique among all registered components" "\n"
+      " @TODO: use on one topic and identify by id" "\n"
+      "string component_id")
+    struct ComponentStatus {
+      int8 status_id;
+
+      @verbatim (language="comment", text=
+        "an individual message for config or error cases" "\n"
+        "it should describe the type of needed config or occurred error briefly" "\n"
+        "it should be possible to extract automaticly subsequent actions/instructions from the message if this is needed")
+      string status_msg;
+    };
+  };
+};

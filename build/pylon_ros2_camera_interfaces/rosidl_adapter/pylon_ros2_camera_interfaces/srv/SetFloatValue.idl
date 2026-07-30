@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/SetFloatValue.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Used by :" "\n"
+      "- set_trigger_delay ROS service. (value = delay in micro sec.)." "\n"
+      "- set_line_debouncer_time ROS service. (value = delay in micro sec.)." "\n"
+      "- set_noise_reduction ROS service. (value = reduction value). " "\n"
+      "- set_sharpness_enhancement ROS service (value = sharpness value). ")
+    struct SetFloatValue_Request {
+      @verbatim (language="comment", text=
+        "value to be setted")
+      float value;
+    };
+    struct SetFloatValue_Response {
+      @verbatim (language="comment", text=
+        "indicate successful run of triggered service")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "informational, e.g., for error messages")
+      string message;
+    };
+  };
+};

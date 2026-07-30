@@ -1,0 +1,39 @@
+[0.018s] Invoking command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component': CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/local/bin/cmake --build /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component -- -j8 -l8
+[0.084s] [ 20%] Built target set_device_user_id
+[0.085s] [ 40%] Built target ip_auto_config
+[0.121s] [100%] Built target pylon_ros2_camera_component
+[0.128s] Invoked command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component' returned '0': CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/local/bin/cmake --build /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component -- -j8 -l8
+[0.131s] Invoking command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component': CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/local/bin/cmake --install /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component
+[0.135s] -- Install configuration: "Release"
+[0.135s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/libpylon_ros2_camera_component.so
+[0.137s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/pylon_ros2_camera_component/ip_auto_config
+[0.138s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/pylon_ros2_camera_component/set_device_user_id
+[0.138s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component/
+[0.139s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//pylon_ros2_camera_node.hpp
+[0.139s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//pylon_ros2_camera_parameter.hpp
+[0.139s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//visibility_control.hpp
+[0.139s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//binary_exposure_search.hpp
+[0.139s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//pylon_ros2_camera.hpp
+[0.139s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//encoding_conversions.hpp
+[0.140s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/library_path.sh
+[0.140s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/library_path.dsv
+[0.140s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/ament_index/resource_index/package_run_dependencies/pylon_ros2_camera_component
+[0.140s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/ament_index/resource_index/parent_prefix_path/pylon_ros2_camera_component
+[0.140s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/ament_prefix_path.sh
+[0.140s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/ament_prefix_path.dsv
+[0.141s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/path.sh
+[0.141s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/path.dsv
+[0.141s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/local_setup.bash
+[0.141s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/local_setup.sh
+[0.141s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/local_setup.zsh
+[0.141s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/local_setup.dsv
+[0.142s] -- Installing: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.dsv
+[0.142s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/ament_index/resource_index/packages/pylon_ros2_camera_component
+[0.142s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/ament_index/resource_index/rclcpp_components/pylon_ros2_camera_component
+[0.142s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.142s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/cmake/ament_cmake_export_libraries-extras.cmake
+[0.142s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.142s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/cmake/pylon_ros2_camera_componentConfig.cmake
+[0.143s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/cmake/pylon_ros2_camera_componentConfig-version.cmake
+[0.143s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.xml
+[0.145s] Invoked command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component' returned '0': CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_wrapper/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/local/bin/cmake --install /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component

@@ -1,0 +1,27 @@
+{
+  "package_name": "pylon_ros2_camera_interfaces",
+  "non_idl_tuples": [
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:msg/CurrentParams.msg",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:msg/ComponentStatus.msg",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/GetIntegerValue.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/GetFloatValue.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/GetStringValue.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/GetPtpStatus.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetBinning.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetBrightness.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetExposure.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetGain.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetGamma.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetROI.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetSleeping.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetWhiteBalance.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetIntegerValue.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetFloatValue.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetStringValue.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/SetActionTriggerConfiguration.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/IssueActionCommand.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:srv/IssueScheduledActionCommand.srv",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:action/GrabImages.action",
+    "/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_interfaces:action/GrabBlazeData.action"
+  ]
+}

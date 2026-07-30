@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/SetGain.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "The target gain in percent of the maximal value the camera supports." "\n"
+      "For USB cameras, the gain is in dB, for GigE cameras it is given in so" "\n"
+      "called 'device specific units'.")
+    struct SetGain_Request {
+      float target_gain;
+    };
+    @verbatim (language="comment", text=
+      "Exact match can not always be reached")
+    struct SetGain_Response {
+      float reached_gain;
+
+      boolean success;
+    };
+  };
+};

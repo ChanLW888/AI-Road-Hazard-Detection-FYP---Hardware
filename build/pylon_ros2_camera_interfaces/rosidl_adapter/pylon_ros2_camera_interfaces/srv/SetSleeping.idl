@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/SetSleeping.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "If the camera runs in topic mode (continuously publishing images over the" "\n"
+      "topics respecting the desired frame_rate) this service offers the posibillity" "\n"
+      "to pause the image acquisition. To restart the grabbing, this service should" "\n"
+      "be called again with set_sleeping set to false")
+    struct SetSleeping_Request {
+      boolean set_sleeping;
+    };
+    struct SetSleeping_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "pylon_ros2_camera_interfaces__rs",
+		"source" : "/home/mcav/cam_dev_ws/build/pylon_ros2_camera_interfaces/pylon_ros2_camera_interfaces__rs"
+	}
+}

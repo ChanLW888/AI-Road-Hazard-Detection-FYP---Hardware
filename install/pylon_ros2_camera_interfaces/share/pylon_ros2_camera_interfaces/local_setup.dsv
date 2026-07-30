@@ -1,0 +1,4 @@
+source;share/pylon_ros2_camera_interfaces/environment/ament_prefix_path.sh
+source;share/pylon_ros2_camera_interfaces/environment/library_path.sh
+source;share/pylon_ros2_camera_interfaces/environment/path.sh
+source;share/pylon_ros2_camera_interfaces/environment/pythonpath.sh

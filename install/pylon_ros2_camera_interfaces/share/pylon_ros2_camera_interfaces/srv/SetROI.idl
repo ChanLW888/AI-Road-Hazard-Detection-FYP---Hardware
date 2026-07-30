@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/SetROI.srv
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/RegionOfInterest.idl"
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Select a region of interest to get a cropped image." "\n"
+      "The region is defined by four parameters" "\n"
+      "roi.width: with of the region" "\n"
+      "roi.height: height of the region" "\n"
+      "roi.x_offset at which pixel a long the x axis (horizontal) does the" "\n"
+      "cropped region start" "\n"
+      "roi.y_offset at which pixel a long the y axis (vertical) does the" "\n"
+      "cropped region start" "\n"
+      "The cropped image will then be Image[y_offset:y_offset+vertical, x_offset:x_offset+horizontal]" "\n"
+      "Notice that x_offset cannot be larger than img.width - roi.width" "\n"
+      "The same for y_offset, not larger than img.height - roi.height")
+    struct SetROI_Request {
+      sensor_msgs::msg::RegionOfInterest target_roi;
+    };
+    @verbatim (language="comment", text=
+      "Exact match can not always reached")
+    struct SetROI_Response {
+      sensor_msgs::msg::RegionOfInterest reached_roi;
+
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/GetFloatValue.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    struct GetFloatValue_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetFloatValue_Response {
+      @verbatim (language="comment", text=
+        "returned value")
+      float value;
+
+      @verbatim (language="comment", text=
+        "indicate successful run of triggered service")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "informational, e.g., for error messages")
+      string message;
+    };
+  };
+};

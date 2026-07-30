@@ -1,0 +1,2 @@
+pylon_ros2_camera::TestGrabImagesActionClient;lib/libaction_client_test_grab_images.so
+pylon_ros2_camera::TestGrabBlazeDataActionClient;lib/libaction_client_test_grab_blaze_data.so

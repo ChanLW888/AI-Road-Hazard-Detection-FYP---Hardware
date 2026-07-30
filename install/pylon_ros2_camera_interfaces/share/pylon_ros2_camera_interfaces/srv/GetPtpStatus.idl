@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/GetPtpStatus.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    struct GetPtpStatus_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetPtpStatus_Response {
+      @verbatim (language="comment", text=
+        "latched state of the PTP clock, see https://ja.docs.baslerweb.com/pylonapi/net/T_Basler_Pylon_PLCamera_PtpStatusEnum")
+      string ptp_status;
+
+      @verbatim (language="comment", text=
+        "latched state of the clock servo, see https://docs.baslerweb.com/pylonapi/net/T_Basler_Pylon_PLCamera_PtpServoStatusEnum")
+      string ptp_servo_status;
+
+      @verbatim (language="comment", text=
+        "ptp offset from master in ticks")
+      @unit (value="ns")
+      int64 offset_from_master;
+
+      @verbatim (language="comment", text=
+        "indicate successful run of triggered service")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "informational, e.g., for error messages")
+      string message;
+    };
+  };
+};

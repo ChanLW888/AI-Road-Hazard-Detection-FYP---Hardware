@@ -1,0 +1,134 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pylon_ros2_camera_interfaces/msg/CurrentParams.msg
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/RegionOfInterest.idl"
+
+module pylon_ros2_camera_interfaces {
+  module msg {
+    struct CurrentParams {
+      @verbatim (language="comment", text=
+        "-20000 = Error")
+      uint32 offset_x;
+
+      @verbatim (language="comment", text=
+        "-20000 = Error")
+      uint32 offset_y;
+
+      boolean reverse_x;
+
+      boolean reverse_y;
+
+      @verbatim (language="comment", text=
+        "-10000 = error/not available")
+      int32 black_level;
+
+      @verbatim (language="comment", text=
+        "-3 = Unknown, -2 = Error, -1 = Not available, 0 = Off, 1 = On")
+      int32 pgi_mode;
+
+      @verbatim (language="comment", text=
+        "-3 = Unknown, -2 = Error, -1 = Not available, 0 = Simple, 1 = BaslerPGI")
+      int32 demosaicing_mode;
+
+      @verbatim (language="comment", text=
+        "-20000.0 = Error, -10000.0 = Not available")
+      float noise_reduction;
+
+      @verbatim (language="comment", text=
+        "-20000.0 = Error, -10000.0 = Not available")
+      float sharpness_enhancement;
+
+      @verbatim (language="comment", text=
+        "-3 = Unknown, -2 = Error, -1 = Not available, 0 = Off, 1 = Daylight5000K, 2 = Daylight6500K, 3 = Tungsten2800K")
+      int32 light_source_preset;
+
+      @verbatim (language="comment", text=
+        "-3 = Unknown, -2 = Error, -1 = Not available, 0 = Off, 1 = Once, 2 = Continuous")
+      int32 balance_white_auto;
+
+      @verbatim (language="comment", text=
+        "-3 = Unknown, -2 = Error, -1 = Not available, 0 = Normal, 1 = Fast")
+      int32 sensor_readout_mode;
+
+      @verbatim (language="comment", text=
+        "-20000 = Error, -10000 = Not available")
+      int32 acquisition_frame_count;
+
+      @verbatim (language="comment", text=
+        "-3 = Unknown, -2 = Error, -1 = Not available, 0 = FrameStart, 1 = FrameBurstStart(USB)/AcquisitionStart(GigE)")
+      int32 trigger_selector;
+
+      @verbatim (language="comment", text=
+        "-3 = Unknown, -2 = Error, -1 = Not available, 0 = Off, 1 = On")
+      int32 trigger_mode;
+
+      @verbatim (language="comment", text=
+        "-3 = Unknown, -2 = Error, -1 = Not available, 0 = Software, 1 = Line1, 2 = Line3, 3 = Line4, 4 = Action1(Selected Gige)")
+      int32 trigger_source;
+
+      @verbatim (language="comment", text=
+        "-3 = Unknown, -2 = Error, -1 = Not available, 0 = RisingEdge, 1 = FallingEdge")
+      int32 trigger_activation;
+
+      @verbatim (language="comment", text=
+        "-20000.0 = Error, -10000.0 = Not available")
+      float trigger_delay;
+
+      @verbatim (language="comment", text=
+        "-3 = Unknown, -2 = Error, -1 = Not available, 0 = Default, 1 = UserSet1, 2 = UserSet2, 3 = UserSet3, 4 = HighGain, 5 = AutoFunctions, 6 = ColorRaw")
+      int32 user_set_selector;
+
+      @verbatim (language="comment", text=
+        "-3 = Unknown, -2 = Error, -1 = Not available, 0 = Default, 1 = UserSet1, 2 = UserSet2, 3 = UserSet3, 4 = HighGain, 5 = AutoFunctions, 6 = ColorRaw")
+      int32 user_set_default_selector;
+
+      boolean is_sleeping;
+
+      float brightness;
+
+      float exposure;
+
+      float gain;
+
+      float gamma;
+
+      uint32 binning_x;
+
+      uint32 binning_y;
+
+      @verbatim (language="comment", text=
+        "Shows the camera temperature. If not available, then 0.0. USB uses DeviceTemperature and GigE TemperatureAbs parameters.")
+      float temperature;
+
+      @verbatim (language="comment", text=
+        "-2 = Error, -1 = Not available")
+      int32 max_num_buffer;
+
+      sensor_msgs::msg::RegionOfInterest roi;
+
+      sequence<string> available_image_encoding;
+
+      string current_image_encoding;
+
+      string current_image_ros_encoding;
+
+      @verbatim (language="comment", text=
+        "latched state of the PTP clock, see https://ja.docs.baslerweb.com/pylonapi/net/T_Basler_Pylon_PLCamera_PtpStatusEnum")
+      string ptp_status;
+
+      @verbatim (language="comment", text=
+        "latched state of the clock servo, see https://docs.baslerweb.com/pylonapi/net/T_Basler_Pylon_PLCamera_PtpServoStatusEnum")
+      string ptp_servo_status;
+
+      @verbatim (language="comment", text=
+        "ptp offset from master in ticks")
+      @unit (value="ns")
+      int64 ptp_offset;
+
+      boolean success;
+
+      string message;
+    };
+  };
+};

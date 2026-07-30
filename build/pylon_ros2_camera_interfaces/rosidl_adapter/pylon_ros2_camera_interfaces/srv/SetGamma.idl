@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/SetGamma.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "The target gamma correction of pixel intensity." "\n"
+      "Adjusts the brightness of the pixel values output by the camera's sensor" "\n"
+      "to account for a non-linearity in the human perception of brightness or" "\n"
+      "of the display system (such as CRT).")
+    struct SetGamma_Request {
+      float target_gamma;
+    };
+    @verbatim (language="comment", text=
+      "Exact match can not always be reached")
+    struct SetGamma_Response {
+      float reached_gamma;
+
+      boolean success;
+    };
+  };
+};

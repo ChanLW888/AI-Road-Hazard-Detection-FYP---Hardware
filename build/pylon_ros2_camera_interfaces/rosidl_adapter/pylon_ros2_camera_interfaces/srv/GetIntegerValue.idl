@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/GetIntegerValue.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    struct GetIntegerValue_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetIntegerValue_Response {
+      @verbatim (language="comment", text=
+        "returned value")
+      int64 value;
+
+      @verbatim (language="comment", text=
+        "indicate successful run of triggered service")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "informational, e.g., for error messages")
+      string message;
+    };
+  };
+};

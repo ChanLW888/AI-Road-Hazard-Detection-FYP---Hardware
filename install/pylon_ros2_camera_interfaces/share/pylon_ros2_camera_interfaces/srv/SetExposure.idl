@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pylon_ros2_camera_interfaces/srv/SetExposure.srv
+// generated code does not contain a copyright notice
+
+
+module pylon_ros2_camera_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "The target exposure time measured in microseconds." "\n"
+      "If the limits were exceeded, the desired exposure time will be truncated.")
+    struct SetExposure_Request {
+      float target_exposure;
+    };
+    @verbatim (language="comment", text=
+      "Exact match can not always be reached")
+    struct SetExposure_Response {
+      float reached_exposure;
+
+      boolean success;
+    };
+  };
+};
