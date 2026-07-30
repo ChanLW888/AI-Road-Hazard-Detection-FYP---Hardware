@@ -1,0 +1,136 @@
+[0.012s] Invoking command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component -- -j8 -l8
+[0.066s] [ 10%] [32mBuilding CXX object CMakeFiles/set_device_user_id.dir/src/tools/set_device_user_id.cpp.o[0m
+[0.066s] [ 20%] [32mBuilding CXX object CMakeFiles/ip_auto_config.dir/src/tools/ip_auto_config.cpp.o[0m
+[0.088s] [ 30%] [32mBuilding CXX object CMakeFiles/pylon_ros2_camera_component.dir/src/binary_exposure_search.cpp.o[0m
+[0.088s] [ 40%] [32mBuilding CXX object CMakeFiles/pylon_ros2_camera_component.dir/src/encoding_conversions.cpp.o[0m
+[0.091s] [ 50%] [32mBuilding CXX object CMakeFiles/pylon_ros2_camera_component.dir/src/pylon_ros2_camera.cpp.o[0m
+[0.098s] [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/tools/set_device_user_id.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.099s] [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/tools/set_device_user_id.cpp:165:18:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[0.099s]   165 |             for ([01;35m[Ki[m[K; i < devices.size(); i++)
+[0.099s]       |                  [01;35m[K^[m[K
+[0.099s] In file included from [01m[K/opt/pylon/include/pylon/gige/BaslerGigEInstantCamera.h:26[m[K,
+[0.099s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/tools/ip_auto_config.cpp:30[m[K:
+[0.099s] /opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h: In instantiation of ‘[01m[Kbool Pylon::CDeviceSpecificInstantCameraT<CameraTraitsT>::RetrieveResult(unsigned int, typename CameraTraitsT::GrabResultPtr_t&, Pylon::ETimeoutHandling) [with CameraTraitsT = Pylon::CBaslerGigEInstantCameraTraits; typename CameraTraitsT::GrabResultPtr_t = Pylon::CBaslerGigEGrabResultPtr][m[K’:
+[0.099s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h:402:14:[m[K   required from here
+[0.099s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h:411:24:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KPylon::CBaslerGigEGrabResultPtr& Pylon::CBaslerGigEGrabResultPtr::operator=(const Pylon::CBaslerGigEGrabResultPtr&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+[0.100s]   411 |             [01;35m[KgrabResult = grabResultLocal[m[K;
+[0.100s]       |             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[0.100s] In file included from [01m[K/opt/pylon/include/pylon/gige/BaslerGigEGrabResultPtr.h:16[m[K,
+[0.100s]                  from [01m[K/opt/pylon/include/pylon/gige/BaslerGigEImageEventHandler.h:21[m[K,
+[0.100s]                  from [01m[K/opt/pylon/include/pylon/gige/BaslerGigEInstantCamera.h:23[m[K,
+[0.100s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/tools/ip_auto_config.cpp:30[m[K:
+[0.100s] [01m[K/opt/pylon/include/pylon/gige/BaslerGigEGrabResultPtr.h:25:51:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KPylon::CBaslerGigEGrabResultPtr[m[K’ has user-provided ‘[01m[KPylon::CBaslerGigEGrabResultPtr::CBaslerGigEGrabResultPtr(const Pylon::CBaslerGigEGrabResultPtr&)[m[K’
+[0.100s]    25 |     PYLON_DEFINE_DEVICE_SPECIFIC_GRAB_RESULT_PTR( [01;36m[KCBaslerGigEGrabResultPtr[m[K, CBaslerGigEGrabResultData )
+[0.100s]       |                                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.100s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificGrabResultPtr.h:40:13:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KPYLON_DEFINE_DEVICE_SPECIFIC_GRAB_RESULT_PTR[m[K’
+[0.100s]    40 |             [01;36m[KClassName[m[K( const ClassName& rhs ) \
+[0.100s]       |             [01;36m[K^~~~~~~~~[m[K
+[0.100s] In file included from [01m[K/opt/pylon/include/pylon/gige/BaslerGigEInstantCamera.h:26[m[K,
+[0.100s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/tools/ip_auto_config.cpp:30[m[K:
+[0.100s] /opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h: In instantiation of ‘[01m[Kbool Pylon::CDeviceSpecificInstantCameraT<CameraTraitsT>::GrabOne(unsigned int, typename CameraTraitsT::GrabResultPtr_t&, Pylon::ETimeoutHandling) [with CameraTraitsT = Pylon::CBaslerGigEInstantCameraTraits; typename CameraTraitsT::GrabResultPtr_t = Pylon::CBaslerGigEGrabResultPtr][m[K’:
+[0.101s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h:418:14:[m[K   required from here
+[0.101s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h:427:24:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KPylon::CBaslerGigEGrabResultPtr& Pylon::CBaslerGigEGrabResultPtr::operator=(const Pylon::CBaslerGigEGrabResultPtr&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+[0.101s]   427 |             [01;35m[KgrabResult = grabResultLocal[m[K;
+[0.101s]       |             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[0.101s] In file included from [01m[K/opt/pylon/include/pylon/gige/BaslerGigEGrabResultPtr.h:16[m[K,
+[0.101s]                  from [01m[K/opt/pylon/include/pylon/gige/BaslerGigEImageEventHandler.h:21[m[K,
+[0.101s]                  from [01m[K/opt/pylon/include/pylon/gige/BaslerGigEInstantCamera.h:23[m[K,
+[0.101s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/tools/ip_auto_config.cpp:30[m[K:
+[0.101s] [01m[K/opt/pylon/include/pylon/gige/BaslerGigEGrabResultPtr.h:25:51:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KPylon::CBaslerGigEGrabResultPtr[m[K’ has user-provided ‘[01m[KPylon::CBaslerGigEGrabResultPtr::CBaslerGigEGrabResultPtr(const Pylon::CBaslerGigEGrabResultPtr&)[m[K’
+[0.102s]    25 |     PYLON_DEFINE_DEVICE_SPECIFIC_GRAB_RESULT_PTR( [01;36m[KCBaslerGigEGrabResultPtr[m[K, CBaslerGigEGrabResultData )
+[0.102s]       |                                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.102s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificGrabResultPtr.h:40:13:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KPYLON_DEFINE_DEVICE_SPECIFIC_GRAB_RESULT_PTR[m[K’
+[0.102s]    40 |             [01;36m[KClassName[m[K( const ClassName& rhs ) \
+[0.102s]       |             [01;36m[K^~~~~~~~~[m[K
+[0.103s] [ 60%] [32m[1mLinking CXX executable set_device_user_id[0m
+[0.104s] [ 70%] [32mBuilding CXX object CMakeFiles/pylon_ros2_camera_component.dir/src/pylon_ros2_camera_node.cpp.o[0m
+[0.106s] [ 80%] [32mBuilding CXX object CMakeFiles/pylon_ros2_camera_component.dir/src/pylon_ros2_camera_parameter.cpp.o[0m
+[0.124s] [ 90%] [32m[1mLinking CXX executable ip_auto_config[0m
+[0.163s] In file included from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/pylon_ros2_camera_impl.hpp:474[m[K,
+[0.163s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera.cpp:29[m[K:
+[0.163s] /home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/impl/pylon_ros2_camera_base.hpp: In instantiation of ‘[01m[Kbool pylon_ros2_camera::PylonROS2CameraImpl<CameraTraitT>::setExtendedBrightness(const int&, const float&) [with CameraTraitT = pylon_ros2_camera::GigECameraTrait][m[K’:
+[0.163s] [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/impl/pylon_ros2_camera_base.hpp:1327:6:[m[K   required from here
+[0.163s] [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/impl/pylon_ros2_camera_base.hpp:1331:11:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KautoTargetBrightnessMax[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[0.163s]  1331 |     float [01;35m[KautoTargetBrightnessMax[m[K = 0.0;
+[0.163s]       |           [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.163s] /home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/impl/pylon_ros2_camera_base.hpp: In instantiation of ‘[01m[Kbool pylon_ros2_camera::PylonROS2CameraImpl<CameraTraitT>::setExtendedBrightness(const int&, const float&) [with CameraTraitT = pylon_ros2_camera::USBCameraTrait][m[K’:
+[0.163s] [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/impl/pylon_ros2_camera_base.hpp:1327:6:[m[K   required from here
+[0.164s] [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/impl/pylon_ros2_camera_base.hpp:1331:11:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KautoTargetBrightnessMax[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[0.164s] In file included from [01m[K/opt/pylon/include/pylon/BaslerUniversalInstantCamera.h:25[m[K,
+[0.164s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/impl/pylon_ros2_camera_base.hpp:41[m[K,
+[0.164s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/pylon_ros2_camera_impl.hpp:474[m[K,
+[0.164s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera.cpp:29[m[K:
+[0.164s] /opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h: In instantiation of ‘[01m[Kbool Pylon::CDeviceSpecificInstantCameraT<CameraTraitsT>::RetrieveResult(unsigned int, typename CameraTraitsT::GrabResultPtr_t&, Pylon::ETimeoutHandling) [with CameraTraitsT = Pylon::CBaslerUniversalInstantCameraTraits; typename CameraTraitsT::GrabResultPtr_t = Pylon::CBaslerUniversalGrabResultPtr][m[K’:
+[0.164s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h:402:14:[m[K   required from here
+[0.164s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h:411:24:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KPylon::CBaslerUniversalGrabResultPtr& Pylon::CBaslerUniversalGrabResultPtr::operator=(const Pylon::CBaslerUniversalGrabResultPtr&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+[0.164s]   411 |             [01;35m[KgrabResult = grabResultLocal[m[K;
+[0.165s]       |             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[0.165s] In file included from [01m[K/opt/pylon/include/pylon/BaslerUniversalGrabResultPtr.h:18[m[K,
+[0.165s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/pylon_ros2_camera_impl.hpp:34[m[K,
+[0.165s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera.cpp:29[m[K:
+[0.165s] [01m[K/opt/pylon/include/pylon/BaslerUniversalGrabResultPtr.h:27:51:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KPylon::CBaslerUniversalGrabResultPtr[m[K’ has user-provided ‘[01m[KPylon::CBaslerUniversalGrabResultPtr::CBaslerUniversalGrabResultPtr(const Pylon::CBaslerUniversalGrabResultPtr&)[m[K’
+[0.165s]    27 |     PYLON_DEFINE_DEVICE_SPECIFIC_GRAB_RESULT_PTR( [01;36m[KCBaslerUniversalGrabResultPtr[m[K, CBaslerUniversalGrabResultData )
+[0.165s]       |                                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.166s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificGrabResultPtr.h:40:13:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KPYLON_DEFINE_DEVICE_SPECIFIC_GRAB_RESULT_PTR[m[K’
+[0.166s]    40 |             [01;36m[KClassName[m[K( const ClassName& rhs ) \
+[0.166s]       |             [01;36m[K^~~~~~~~~[m[K
+[0.166s] In file included from [01m[K/opt/pylon/include/pylon/BaslerUniversalInstantCamera.h:25[m[K,
+[0.166s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/impl/pylon_ros2_camera_base.hpp:41[m[K,
+[0.166s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/pylon_ros2_camera_impl.hpp:474[m[K,
+[0.166s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera.cpp:29[m[K:
+[0.166s] /opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h: In instantiation of ‘[01m[Kbool Pylon::CDeviceSpecificInstantCameraT<CameraTraitsT>::GrabOne(unsigned int, typename CameraTraitsT::GrabResultPtr_t&, Pylon::ETimeoutHandling) [with CameraTraitsT = Pylon::CBaslerUniversalInstantCameraTraits; typename CameraTraitsT::GrabResultPtr_t = Pylon::CBaslerUniversalGrabResultPtr][m[K’:
+[0.167s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h:418:14:[m[K   required from here
+[0.167s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificInstantCamera.h:427:24:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KPylon::CBaslerUniversalGrabResultPtr& Pylon::CBaslerUniversalGrabResultPtr::operator=(const Pylon::CBaslerUniversalGrabResultPtr&)[m[K’ is deprecated [[01;35m[K-Wdeprecated-copy[m[K]
+[0.167s]   427 |             [01;35m[KgrabResult = grabResultLocal[m[K;
+[0.167s]       |             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[0.167s] In file included from [01m[K/opt/pylon/include/pylon/BaslerUniversalGrabResultPtr.h:18[m[K,
+[0.167s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/include/internal/pylon_ros2_camera_impl.hpp:34[m[K,
+[0.167s]                  from [01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera.cpp:29[m[K:
+[0.167s] [01m[K/opt/pylon/include/pylon/BaslerUniversalGrabResultPtr.h:27:51:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KPylon::CBaslerUniversalGrabResultPtr[m[K’ has user-provided ‘[01m[KPylon::CBaslerUniversalGrabResultPtr::CBaslerUniversalGrabResultPtr(const Pylon::CBaslerUniversalGrabResultPtr&)[m[K’
+[0.167s]    27 |     PYLON_DEFINE_DEVICE_SPECIFIC_GRAB_RESULT_PTR( [01;36m[KCBaslerUniversalGrabResultPtr[m[K, CBaslerUniversalGrabResultData )
+[0.168s]       |                                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.168s] [01m[K/opt/pylon/include/pylon/private/DeviceSpecificGrabResultPtr.h:40:13:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KPYLON_DEFINE_DEVICE_SPECIFIC_GRAB_RESULT_PTR[m[K’
+[0.168s]    40 |             [01;36m[KClassName[m[K( const ClassName& rhs ) \
+[0.168s]       |             [01;36m[K^~~~~~~~~[m[K
+[0.207s] [100%] [32m[1mLinking CXX shared library libpylon_ros2_camera_component.so[0m
+[0.225s] [100%] Built target set_device_user_id
+[0.432s] [100%] Built target ip_auto_config
+[1.219s] [100%] Built target pylon_ros2_camera_component
+[1.226s] Invoked command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component' returned '0': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component -- -j8 -l8
+[1.229s] Invoking command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component
+[1.231s] -- Install configuration: "Release"
+[1.231s] -- Installing: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/libpylon_ros2_camera_component.so
+[1.238s] -- Set non-toolchain portion of runtime path of "/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/libpylon_ros2_camera_component.so" to "/home/mcav/lib:/opt/pylon/lib:/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib"
+[1.238s] -- Installing: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/pylon_ros2_camera_component/ip_auto_config
+[1.242s] -- Set non-toolchain portion of runtime path of "/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/pylon_ros2_camera_component/ip_auto_config" to "/home/mcav/lib:/opt/pylon/lib"
+[1.243s] -- Installing: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/pylon_ros2_camera_component/set_device_user_id
+[1.243s] -- Set non-toolchain portion of runtime path of "/home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/lib/pylon_ros2_camera_component/set_device_user_id" to "/home/mcav/lib:/opt/pylon/lib"
+[1.244s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component/
+[1.244s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//pylon_ros2_camera_node.hpp
+[1.244s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//pylon_ros2_camera_parameter.hpp
+[1.244s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//visibility_control.hpp
+[1.244s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//binary_exposure_search.hpp
+[1.244s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//pylon_ros2_camera.hpp
+[1.244s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/include/pylon_ros2_camera_component//encoding_conversions.hpp
+[1.244s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/library_path.sh
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/library_path.dsv
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/ament_index/resource_index/package_run_dependencies/pylon_ros2_camera_component
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/ament_index/resource_index/parent_prefix_path/pylon_ros2_camera_component
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/ament_prefix_path.sh
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/ament_prefix_path.dsv
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/path.sh
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/environment/path.dsv
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/local_setup.bash
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/local_setup.sh
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/local_setup.zsh
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/local_setup.dsv
+[1.245s] -- Installing: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.dsv
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/ament_index/resource_index/packages/pylon_ros2_camera_component
+[1.245s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/ament_index/resource_index/rclcpp_components/pylon_ros2_camera_component
+[1.246s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.246s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/cmake/ament_cmake_export_libraries-extras.cmake
+[1.246s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.246s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/cmake/pylon_ros2_camera_componentConfig.cmake
+[1.246s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/cmake/pylon_ros2_camera_componentConfig-version.cmake
+[1.247s] -- Up-to-date: /home/mcav/cam_dev_ws/install/pylon_ros2_camera_component/share/pylon_ros2_camera_component/package.xml
+[1.248s] Invoked command in '/home/mcav/cam_dev_ws/build/pylon_ros2_camera_component' returned '0': AMENT_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mcav/cam_dev_ws/install/pylon_ros2_camera_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/mcav/cam_dev_ws/build/pylon_ros2_camera_component

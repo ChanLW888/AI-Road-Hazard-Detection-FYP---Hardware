@@ -1,0 +1,27 @@
+[ 20%] Built target ip_auto_config
+[ 40%] Built target set_device_user_id
+[ 50%] [32mBuilding CXX object CMakeFiles/pylon_ros2_camera_component.dir/src/pylon_ros2_camera_node.cpp.o[0m
+[01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera_node.cpp:[m[K In member function ‘[01m[Kvirtual bool pylon_ros2_camera::PylonROS2CameraNode::grabImage()[m[K’:
+[01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera_node.cpp:1053:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass pylon_ros2_camera::PylonROS2CameraNode[m[K’ has no member named ‘[01m[Kheight_[m[K’
+ 1053 |     cv::Mat bayer(this->[01;31m[Kheight_[m[K, this->width_, CV_8UC1,
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera_node.cpp:1053:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass pylon_ros2_camera::PylonROS2CameraNode[m[K’ has no member named ‘[01m[Kwidth_[m[K’
+ 1053 |     cv::Mat bayer(this->height_, this->[01;31m[Kwidth_[m[K, CV_8UC1,
+      |                                        [01;31m[K^~~~~~[m[K
+[01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera_node.cpp:1077:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass pylon_ros2_camera::PylonROS2CameraNode[m[K’ has no member named ‘[01m[Kheight_[m[K’
+ 1077 |     this->[01;31m[Kheight_[m[K = resized.rows;
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera_node.cpp:1078:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass pylon_ros2_camera::PylonROS2CameraNode[m[K’ has no member named ‘[01m[Kwidth_[m[K’
+ 1078 |     this->[01;31m[Kwidth_[m[K  = resized.cols;
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera_node.cpp:1081:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass pylon_ros2_camera::PylonROS2CameraNode[m[K’ has no member named ‘[01m[Kcam_info_msg_[m[K’; did you mean ‘[01m[Kblaze_cam_info_msg_[m[K’?
+ 1081 |     this->[01;31m[Kcam_info_msg_[m[K.height = resized.rows;
+      |           [01;31m[K^~~~~~~~~~~~~[m[K
+      |           [32m[Kblaze_cam_info_msg_[m[K
+[01m[K/home/mcav/cam_dev_ws/src/pylon_ros2_camera/pylon_ros2_camera_component/src/pylon_ros2_camera_node.cpp:1082:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass pylon_ros2_camera::PylonROS2CameraNode[m[K’ has no member named ‘[01m[Kcam_info_msg_[m[K’; did you mean ‘[01m[Kblaze_cam_info_msg_[m[K’?
+ 1082 |     this->[01;31m[Kcam_info_msg_[m[K.width  = resized.cols;
+      |           [01;31m[K^~~~~~~~~~~~~[m[K
+      |           [32m[Kblaze_cam_info_msg_[m[K
+gmake[2]: *** [CMakeFiles/pylon_ros2_camera_component.dir/build.make:118: CMakeFiles/pylon_ros2_camera_component.dir/src/pylon_ros2_camera_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/pylon_ros2_camera_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
